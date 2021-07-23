@@ -20,6 +20,10 @@ namespace Collections
                 case 2:
                     Operations.StackFunction();
                     break;
+                case 3:
+                    Operations.QueueFunction();
+                    break;
+
                 default:
                     Console.WriteLine("Enter valid option :");
                     break;
