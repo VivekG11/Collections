@@ -26,5 +26,26 @@ namespace Collections
             // Capacity - returns the number of elements list can contain
             Console.WriteLine(list.Capacity);
         }
+        public static void StackFunction()
+        {
+            //Initialising stack collection
+            Stack<int> id = new Stack<int>();
+            //Adding elements using push operation
+            id.Push(11);
+            id.Push(13);
+            id.Push(29);
+            id.Push(21);
+            //deleting element from stack using pop 
+            int del = id.Pop();
+
+            Console.WriteLine("Elements in stack are :");
+            foreach (int i in id)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Popped element is :" + del);
+            //returns true if the given input is present in stack.
+            Console.WriteLine(id.Contains(10));
+        }
     }
 }
