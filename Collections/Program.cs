@@ -26,7 +26,9 @@ namespace Collections
                 case 4:
                     Operations.DictionaryFunction();
                     break;
-
+                case 5:
+                    Operations.SetMethod();
+                    break;
                 default:
                     Console.WriteLine("Enter valid option :");
                     break;
