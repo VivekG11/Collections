@@ -8,7 +8,7 @@ namespace Collections
         public static void Main(string[] args)
         {
             Console.WriteLine("Collections Programs......");
-          
+            Operations.ListFunction();
         }
 
        
