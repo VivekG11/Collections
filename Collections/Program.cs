@@ -23,6 +23,9 @@ namespace Collections
                 case 3:
                     Operations.QueueFunction();
                     break;
+                case 4:
+                    Operations.DictionaryFunction();
+                    break;
 
                 default:
                     Console.WriteLine("Enter valid option :");

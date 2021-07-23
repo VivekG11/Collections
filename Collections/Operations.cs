@@ -47,5 +47,50 @@ namespace Collections
             //returns true if the given input is present in stack.
             Console.WriteLine(id.Contains(10));
         }
+
+        public static void QueueFunction()
+        {
+            //initializing Queue
+            Queue<string> vs = new Queue<string>();
+            //Adding elements in to queue using Enqueue Operation
+            vs.Enqueue("TVS");
+            vs.Enqueue("BridgeLbs");
+            vs.Enqueue("Dell");
+            vs.Enqueue("Vivek");
+            //returns true if the given input exist in the queue
+            bool res = vs.Contains("Lenovo");
+            Console.WriteLine(res);
+
+            foreach (string str in vs)
+            {
+                Console.WriteLine(str);
+            }
+            //returning total count
+            Console.WriteLine("Total Elements in Queue are :" + vs.Count);
+
+        }
+
+        public static void DictionaryFunction()
+        {
+            //Initialising Dictionary
+            Dictionary<int, string> details = new Dictionary<int, string>();
+            //Adding elements into Dictionary
+            details.Add(112, "Vivek");
+            details.Add(113, "Adutya");
+            details.Add(114, "Pavani");
+            //Chceking if the entered element is present in the dictionary
+            bool res = details.ContainsKey(112);
+            if (res)
+            {
+                Console.WriteLine("Value present in the key is" + details.GetValueOrDefault(112));
+            }
+
+            foreach (var i in details)
+            {
+                Console.WriteLine("Key is {0} , Value is {1}", i.Key, i.Value);
+            }
+
+            Console.WriteLine("Total elements in dictionay are" + details.Count);
+        }
     }
 }
