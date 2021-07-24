@@ -92,5 +92,25 @@ namespace Collections
 
             Console.WriteLine("Total elements in dictionay are" + details.Count);
         }
+
+        public static void SetMethod()
+        {
+            //Initialising HashSet
+            HashSet<int> set = new HashSet<int>();
+            //Imserting elements into set
+            set.Add(21);
+            set.Add(28);
+            set.Add(29);
+            set.Add(44);
+            set.Remove(28);
+
+            foreach (var i in set)
+            {
+                Console.WriteLine(i);
+            }
+            //returining size of hashset
+            Console.WriteLine("Number of elements in the list are :" + set.Count);
+            
+        }
     }
 }
